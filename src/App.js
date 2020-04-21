@@ -4,7 +4,7 @@ import { Cards, Chart, CountrySelector } from "./components";
 import styles from "./App.module.css";
 import { fetchData } from "./api";
 
-import covidImage from "./images/covid.png";
+import covidImage from "./images/SARS-CoV-2.png";
 
 class App extends React.Component {
   state = {
@@ -27,7 +27,14 @@ class App extends React.Component {
 
     return (
       <div className={styles.container}>
-        <img className={styles.image} alt="covid19" src={covidImage} />
+        {/* <img className={styles.image} alt="covid19" src={covidImage} /> */}
+        <h1>
+          C
+          <span>
+            <img className={styles.image} alt="covid19" src={covidImage} />
+          </span>
+          vid-19 Tracker
+        </h1>
         <Cards data={data} />
         <CountrySelector handleCountryChange={this.handleCountryChange} />
         <Chart data={data} country={country} />

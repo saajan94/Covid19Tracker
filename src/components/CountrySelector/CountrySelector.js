@@ -20,6 +20,7 @@ const CountrySelector = ({ handleCountryChange }) => {
     <div>
       <FormControl className={styles.formControl}>
         <NativeSelect
+          className={styles.options}
           defaultValue=""
           onChange={(e) => handleCountryChange(e.target.value)}
         >
