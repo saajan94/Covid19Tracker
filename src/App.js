@@ -33,7 +33,7 @@ class App extends React.Component {
           <span>
             <img className={styles.image} alt="covid19" src={covidImage} />
           </span>
-          vid-19 Tracker
+          VID-19 Tracker
         </h1>
         <Cards data={data} />
         <CountrySelector handleCountryChange={this.handleCountryChange} />
